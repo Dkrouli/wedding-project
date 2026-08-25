@@ -83,14 +83,17 @@ document.addEventListener("mousemove", (event) => {
 document.addEventListener("DOMContentLoaded", function () {
   const mapButton = document.getElementById("open-maps-btn");
 
-  const destinationAddress = "деревня Свистуха, 40С";
-
-  const routeText = `Мое местоположение~${destinationAddress}`;
-
-  const yandexMapsUrl = `https://yandex.ru/maps/?mode=routes&rtext=${encodeURIComponent(routeText)}&rtt=auto`;
-
   if (mapButton) {
+    const lat = 56.194082;
+    const lon = 37.286353;
+
+    const routeText = `Мое местоположение~${lat},${lon}`;
+
+    const yandexMapsUrl = `https://yandex.ru/maps/?mode=routes&rtext=${encodeURIComponent(routeText)}&rtt=auto`;
+
     mapButton.href = yandexMapsUrl;
+
+    console.log("Кнопка готова! Ссылка:", yandexMapsUrl);
   }
 });
 
