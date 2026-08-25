@@ -4,7 +4,7 @@ body {
   font-family: sans-serif;
   background-image: url("../images/bg-desktop.jpg");
   background-size: 100% auto;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
 }
