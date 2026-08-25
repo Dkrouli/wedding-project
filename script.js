@@ -81,23 +81,6 @@ document.addEventListener("mousemove", (event) => {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const mapButton = document.getElementById("open-maps-btn");
-
-  if (mapButton) {
-    const lat = 56.194082;
-    const lon = 37.286353;
-
-    const routeText = `Мое местоположение~${lat},${lon}`;
-
-    const yandexMapsUrl = `https://yandex.ru/maps/?mode=routes&rtext=${encodeURIComponent(routeText)}&rtt=auto`;
-
-    mapButton.href = yandexMapsUrl;
-
-    console.log("Кнопка готова! Ссылка:", yandexMapsUrl);
-  }
-});
-
-document.addEventListener("DOMContentLoaded", function () {
   const button = document.getElementById("playSound");
   const audio = document.getElementById("myAudio");
 
