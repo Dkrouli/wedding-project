@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Свадьба</title>
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="icon" href="./images/favicon.ico" sizes="any" />
+    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./images/apple-touch-icon.png" />
+  </head>
+  <body>
+    <div class="splash-screen">
+      <img
+        src="./images/once-upon-a-time.png"
+        alt="Обложка книги"
+        class="splash-image"
+      />
+    </div>
+    <div class="main-content">
+      <header class="header"></header>
+      <main>
+        <section class="names scroll-reveal">
+          <div>
+            <img src="./images/names.jpeg" alt="Имена" class="img-fade-edges" />
+          </div>
+        </section>
+
+        <section class="story-section scroll-reveal">
+          <div class="story-container">
+            <div class="story-text">
+              <h2 class="title">Be our guest!</h2>
+              <p>
+                У нас скоро состоится особенный день, и мы будем счастливы
+                видеть вас в нашем кругу друзей и близких, чтобы создать
+                незабываемые моменты радости и веселья. Сделайте наш день еще
+                более особенным своим присутствием!
+              </p>
+              <h2 class="title">Тайминг</h2>
+              <ul class="timing">
+                <li>15:00&nbsp;&nbsp;&nbsp;&nbsp;Фуршет</li>
+                <li>16:00&nbsp;&nbsp;&nbsp;&nbsp;Церемония</li>
+                <li>17:00&nbsp;&nbsp;&nbsp;&nbsp;Банкет</li>
+                <li>21:00&nbsp;&nbsp;&nbsp;&nbsp;Вынос торта</li>
+                <li>23:00&nbsp;&nbsp;&nbsp;&nbsp;Завершение вечера</li>
+              </ul>
+              <div class="audio-container">
+                <button id="playSound">
+                  <img
+                    src="./images/music.png"
+                    alt="Управление музыкой"
+                    id="playIcon"
+                  />
+                </button>
+              </div>
+              <audio id="myAudio" src="./audio/Forest_Maiden.mp3" loop></audio>
+            </div>
+
+            <div class="story-image-box">
+              <img src="./images/selfy-wedding.png" alt="Главное фото" />
+            </div>
+          </div>
+        </section>
+
+        <section class="dress-code scroll-reveal">
+          <h2 class="title">Дресс-код</h2>
+          <div>
+            <img src="./images/dress_code.png" alt="Дресс-код" />
+          </div>
+        </section>
+
+        <section class="survey scroll-reveal">
+          <div class="survey-wrapper">
+            <div class="survey-questions">
+              <h2 class="title">Опрос для гостей</h2>
+              <p
+                style="
+                  color: #f0ead6;
+                  margin-bottom: 30px;
+                  font-size: 18px;
+                  line-height: 1.5;
+                  font-family: cursive;
+                "
+              >
+                Напишите пару слов о вашем участии в празднике. Это поможет нам
+                всё подготовить!
+              </p>
+
+              <ul class="questions-list">
+                <li><span class="q-num">1.</span> Имя и фамилия</li>
+                <li>
+                  <span class="q-num">2.</span> Есть ли у вас пищевые
+                  ограничения или аллергии?
+                </li>
+                <li>
+                  <span class="q-num">3.</span> Какие напитки
+                  предпочитаете(алкогольные/безалкогольные)?
+                </li>
+                <li>
+                  <span class="q-num">4.</span> Вы приедете на своем автомобиле?
+                </li>
+              </ul>
+            </div>
+
+            <form
+              class="survey-form"
+              id="guestForm"
+              action="https://formspree.io/f/xnpaldvj"
+              method="POST"
+            >
+              <div class="form-row">
+                <label for="message">Напишите ваш ответ:</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="6"
+                  placeholder="Например: «Иван Иванов с супругой, аллергии нет, предпочитаем безалколгольные напитки, приедем на своем автомобиле)»"
+                  required
+                  style="width: 100%; box-sizing: border-box"
+                ></textarea>
+              </div>
+
+              <button type="submit" class="submit-btn">Отправить ответ</button>
+
+              <div
+                id="form-success"
+                class="success-message"
+                style="
+                  display: none;
+                  color: #ffd700;
+                  margin-top: 15px;
+                  text-align: center;
+                  font-weight: bold;
+                "
+              >
+                Спасибо! Ваш ответ отправлен. Мы учтём все пожелания. 🥂
+              </div>
+
+              <div
+                id="form-error"
+                class="error-message"
+                style="
+                  display: none;
+                  color: red;
+                  margin-top: 15px;
+                  text-align: center;
+                  font-weight: bold;
+                "
+              >
+                Произошла ошибка. Попробуйте позже.
+              </div>
+            </form>
+          </div>
+        </section>
+
+        <section class="place scroll-reveal">
+          <h2 class="title">Место проведения события - Wood House</h2>
+          <div>
+            <img
+              src="./images/wood-house.png"
+              alt="Вуд хаус"
+              class="wood_house"
+            />
+          </div>
+          <div class="button-center-wrapper scroll-reveal">
+            <a href="#" id="open-maps-btn" class="map-button" target="_blank">
+              Построить маршрут
+            </a>
+          </div>
+        </section>
+
+        <section class="details scroll-reveal">
+          <h2 class="title">Details</h2>
+          <p class="text">
+            Свои тёплые слова и пожелания приносите в сердцах, а подарки - в
+            конверте
+          </p>
+          <p class="text">
+            Вместо цветов мы будем счастливы получить бутылку вина, которую
+            вместе разделим однажды вечером
+          </p>
+        </section>
+
+        <section class="contacts scroll-reveal">
+          <h2 class="title">Контакты</h2>
+          <p class="text">Наши телефоны вы знаете...</p>
+        </section>
+
+        <h2 class="time-text">До события осталось</h2>
+        <div id="countdown" class="countdown-text"></div>
+      </main>
+    </div>
+
+    <footer></footer>
+    <div id="cursor-sparkles"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
