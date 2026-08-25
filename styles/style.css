@@ -533,7 +533,7 @@ body {
 
 @media (max-width: 768px) {
   body {
-    background-image: url("../images/bg-mobile.jpeg");
+    background-image: url("../images/bg-desktop.jpg");
     background-size: cover;
     background-repeat: no-repeat;
   }
