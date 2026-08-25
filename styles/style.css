@@ -280,7 +280,8 @@ body {
 }
 
 .questions-list li {
-  font-family: cursive;font-family: cursive;
+  font-family: cursive;
+  font-family: cursive;
   margin-bottom: 15px;
   font-size: 18px;
   display: flex;
@@ -434,8 +435,8 @@ body {
 
 .timing {
   list-style: none;
-  padding: 0;
-  margin-left: 35%;
+  padding-left: 130px;
+  margin: 0 auto;
   max-width: 500px;
   width: 100%;
   text-align: left;
@@ -581,9 +582,9 @@ body {
   }
 
   .story-text {
-    padding-right: 0;
-    margin-bottom: 30px;
     width: 100%;
+    padding-right: 0;
+    box-sizing: border-box;
   }
 
   .story-image-box {
@@ -603,7 +604,12 @@ body {
   }
 
   .timing {
-    margin-left: 25%;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 100%;
+    text-align: left;
+    padding-left: 135px;
+    box-sizing: border-box;
   }
 
   .survey-form {
