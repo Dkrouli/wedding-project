@@ -83,10 +83,15 @@ document.addEventListener("mousemove", (event) => {
 document.addEventListener("DOMContentLoaded", function () {
   const mapButton = document.getElementById("open-maps-btn");
 
-  const destinationAddress = encodeURIComponent("деревня Свистуха, 40С");
-  const yandexMapsUrl = `https://yandex.ru/maps/?mode=routes&rtext=~${destinationAddress}&rtt=auto`;
+  const destinationAddress = "деревня Свистуха, 40С";
 
-  mapButton.href = yandexMapsUrl;
+  const routeText = `Мое местоположение~${destinationAddress}`;
+
+  const yandexMapsUrl = `https://yandex.ru/maps/?mode=routes&rtext=${encodeURIComponent(routeText)}&rtt=auto`;
+
+  if (mapButton) {
+    mapButton.href = yandexMapsUrl;
+  }
 });
 
 document.addEventListener("DOMContentLoaded", function () {
