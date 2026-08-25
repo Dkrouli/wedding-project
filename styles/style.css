@@ -3,7 +3,7 @@ body {
   min-height: 100vh;
   font-family: sans-serif;
   background-image: url("../images/bg-desktop.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -435,7 +435,7 @@ body {
 
 .timing {
   list-style: none;
-  padding-left: 130px;
+  padding-left: 160px;
   margin: 0 auto;
   max-width: 500px;
   width: 100%;
@@ -535,7 +535,7 @@ body {
 
 @media (max-width: 768px) {
   body {
-    background-image: url("../images/bg-desktop.jpg");
+    background-image: url("../images/bg-mobile.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
   }
