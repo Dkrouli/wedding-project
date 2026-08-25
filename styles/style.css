@@ -280,7 +280,7 @@ body {
 }
 
 .questions-list li {
-  font-family: cursive;
+  font-family: cursive;font-family: cursive;
   margin-bottom: 15px;
   font-size: 18px;
   display: flex;
@@ -292,6 +292,7 @@ body {
   font-weight: bold;
   margin-right: 10px;
   flex-shrink: 0;
+  font-family: cursive;
 }
 
 .survey-form {
